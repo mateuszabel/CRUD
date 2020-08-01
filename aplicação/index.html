@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicação- CRUD</title>
+    <!--  Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Front-End</h1>
+    <input type="hidden" id="id">
+    <div>
+        <input type="text" placeholder="Nome" id="nome" class="form-control">
+        <input type="text" placeholder="Marca" id="marca" class="form-control">
+        <input type="text" placeholder="Valor" id="valor" class="form-control">
+
+        <button class="btn btn-primary" id="btnCadastrar" onclick="cadastrar()">Cadastrar</button>
+        <button class="btn btn-warning" id="btnEditar" onclick="editar()">Editar</button>
+        <button class="btn btn-danger" id="btnRemover" onclick="remover()">Remover</button>
+        <button class="btn btn-secondary" id="btnCancelar" onclick="limpar()">Cancelar</button>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>    
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Valor</th>
+                <th>Selecionar</th>
+            </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+    </table>    
+</body>
+</html>
